@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>WebMaster</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src='js/jquery-3.4.1.min.js'></script>
+	<script src='js/scripts.js'></script>
+</head>
+<body>
+<header>
+	<nav class="menu-main">
+		<ul>
+			<li><a class="active" href="#">Личная информация</a></li>
+			<li><a href="#">Опыт</a></li>
+			<li><a href="#">JavaScript</a></li>
+			<li><a href="#">О себе</a></li>
+		</ul>
+	</nav>
+	<div class="mobile">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu"></label>       
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line fourth"></div>
+        <nav class="menu-main-mobile">
+           	<ul>
+				<li><a class="active" href="#" title="Личная информация">Личная информация</a></li>
+				<li><a href="#" title="Опыт">Опыт</a></li>
+				<li><a href="#" title="JavaScript">JavaScript</a></li>
+				<li><a href="#" title="О себе">О себе</a></li>
+			</ul>
+        </nav>
+    </div>
+	<div class="header-bg">
+		<div class="gradient">
+		</div>
+		<div class="title">
+			<h1>Анкета</h1>
+		</div>
+	</div>	
+</header>
+<section>
+	<div class="container">
+		<form id="form-info" method="post" action="#">
+			<div class="container-min">
+				<div class="info">
+ 					<img class="icons" src="images/ico-info.png" alt="ФИО" />
+					<h2>Личная информация</h2>					
+					<div class="input-info">
+						<input type="text" id="name"  value="Василенко Максим Игоревич" required>
+						<label for="name">ФИО</label>       
+					</div>
+					<input type="hidden" id="year" value="1986">
+					<div id="dd" class="wrapper-dropdown">
+						<div class="title-year">
+							Год рождения
+						</div>       
+						<div class="txt-year">
+							1986
+						</div>					
+						<div class="dropdown">
+							<ul class="">
+								<li>1998</li>
+								<li>1997</li>
+								<li>1996</li>
+								<li>1995</li>
+								<li>1994</li>
+								<li>1993</li>
+								<li>1992</li>
+								<li>1991</li>
+								<li>1990</li>
+								<li>1989</li>
+								<li>1988</li>
+								<li>1987</li>
+								<li>1986</li>					
+							</ul>
+						</div>
+					</div>
+					<div class="input-info">
+						<input type="text" id="place" value="Аликанте" required>
+						<label for="place">Место проживания</label>       
+					</div>
+					<div class="input-info">
+						<input type="text" id="Skype" value="verve000" required>
+						<label for="Skype">Skype</label>       
+					</div>
+					<div class="input-info">
+						<input type="text" id="email" value="verve0000@yandex.ru" required>
+						<label for="email">E-mail</label>       
+					</div>
+				</div>
+			</div>
+			<div class="experience">
+				<img class="icons" src="images/ico-experience.png" alt="Опыт" />
+				<h2>Расскажите о своем опыте</h2>
+		     	<div class="container">
+					<div class="checkbox">
+						<div class="block-options">
+							<div>
+								<input id="check1" type="checkbox" name="check" value="check1" checked>
+								<label for="check1">БЭМ/OOCSS</label>
+							</div>					
+							<div>
+								<input id="check2" type="checkbox" name="check" value="check2" checked>
+								<label for="check2">Верстаю семантично</label>
+							</div>
+							<div>
+								<input id="check3" type="checkbox" name="check" value="check3" checked>
+								<label for="check3">Webpack</label>
+							</div>					
+							<div>
+								<input id="check4" type="checkbox" name="check" value="check4" checked>
+								<label for="check4">Stylus/LESS/SASS</label>
+							</div>
+							<div>
+								<input id="check5" type="checkbox" name="check" value="check5">
+								<label for="check5">ES2015/ES2016</label>
+							</div>					
+							<div>
+								<input id="check6" type="checkbox" name="check" value="check6" checked>
+								<label for="check6">jQuery</label>
+							</div>
+							<div>
+								<input id="check7" type="checkbox" name="check" value="check7" checked>
+								<label for="check7">Работаю с SVG</label>
+							</div>
+							<div>
+								<input id="check8" type="checkbox" name="check" value="check8">
+								<label for="check8">Gulp/GRUNT</label>
+							</div>					
+							<div>
+								<input id="check9" type="checkbox" name="check" value="check9" checked>
+								<label for="check9">Ипользую&nbsp;Git</label>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="info-js">
+				<img class="icons" src="images/ico-js.png" alt="JavaScript" />
+				<h2>Уровень владения JavaScript</h2>
+				<div class="block-slider">		
+					<div class="range-lines">
+						<div class="line-1">
+							<div></div>
+						</div>
+						<div class="line-2">
+							<div></div>
+						</div>
+						<div class="line-3">
+							<div></div>
+						</div>
+						<div class="line-4 text-right">
+							<div></div>
+						</div>
+					</div>	
+					<div class="range-text">
+						<div class="text-1">
+							<span>&#8211;&nbsp;</span>
+							Не владею
+						</div>
+						<div class="text-2">
+							<span>&#8211;&nbsp;</span>
+							Использую готовые<br>решения
+						</div>
+						<div class="text-3">
+							<span>&#8211;&nbsp;</span>
+							Использую готовые решения<br>и умею и переделывать
+						</div>
+						<div class="text-4 text-right">
+							<span>&#8211;&nbsp;</span>
+							Пишу сложный JS с нуля
+						</div>
+					</div>	
+				</div>	
+				<div class="slider">
+					<input type="range" id="fader" min="0" max="4" value="2" step="1" oninput="outputUpdate(value)">
+					<div class="diagonal"></div>
+				</div>
+			</div>
+			<div class="about">
+				<img class="icons" src="images/ico-about.png" alt="О себе" />
+				<h2>Расскажите о себе</h2>
+				<p>Напишите несколько предложений, чем привлекла наша вакансия<br> и что вы ожидаете от работы у нас.</p>
+				<textarea placeholder="Понравилась тем, что компания работает с известными брендами, а также есть возможность роста и развития, как специалиста." name="text"></textarea>
+			</div>
+			<input class="btn-submit" type="submit" value="Готово">
+		</form>
+	</div>
+</section>
+<footer>
+</footer>
+</body> 
